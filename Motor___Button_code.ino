@@ -19,15 +19,12 @@ void loop() {
   myStepper.step(stepsPerRevolution);
   if(button.isReleased() && buttonState == false){
     Serial.println("Turning off motor");
-    currentSpeed = 0;
+    stepsPerRevolution = 0;
     buttonState = true;
-//    Serial.println(buttonState);
-//    myStepper.setSpeed(0);
   }
   else if (button.isReleased() && buttonState == true){
     Serial.println("Turning on motor");
-    currentSpeed = 120;
+    stepsPerRevolution = 200;
     buttonState = false;
   }
-  myStepper.setSpeed(currentSpeed);
 }
