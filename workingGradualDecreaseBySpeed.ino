@@ -1,60 +1,70 @@
+// Libraries
 #include <Stepper.h>
 #include <ezButton.h>
 
-// Initialize buttons
+// Initialize buttons with pin number on arduino (#)
 ezButton greenButton(12);
 ezButton redButton(13);
 
+// Number of steps to take per revolution
 int stepsPerRevolution = 200;
 
+// The initial speed of the motor
 int currentSpeed = 120;
 
-unsigned long myTime;
-unsigned long startTime = millis();
+// holds boolean telling us if we begin decreasing or not
 boolean decreaseState = false;
 boolean increaseState = false;
 
+// instantiate stepper with steps per rev, and pin #s (2-13)
 Stepper myStepper(stepsPerRevolution, 2, 3, 4, 5);
 
+// Initial setup of motor
 void setup() {
   Serial.begin(9600);
   myStepper.setSpeed(currentSpeed);
 }
 
+// Program that loops while current goes through arduino
 void loop() {
+  // needed - dont remove if using buttons
   greenButton.loop();
   redButton.loop();
+
+  // step motor in clockwise direction with given #
   myStepper.step(-stepsPerRevolution);
+  // indicates delay in responses to motor (lower the greater the delay)
   myStepper.setSpeed(currentSpeed);
-  // Serial.println(currentSpeed);
+
+
   if(greenButton.isReleased()){
-    Serial.println("Turning on motor");
-    // currentSpeed = 120;
-    // stepsPerRevolution = 200;
+    //Serial.println("Turning on motor");
     increaseState = true;
   }
   else if (redButton.isReleased()){
-    Serial.println("Turning off motor");
+    //Serial.println("Turning off motor");
     decreaseState = true;
-    // stepsPerRevolution = 0;
   }
   if(decreaseState == true){
     decreaseSpeed();
-    Serial.println("Let's decrease now.");
+    //Serial.println("Let's decrease now.");
   }
   if(increaseState == true){
     increaseSpeed();
-    Serial.println("Let's increase now.");
+    //Serial.println("Let's increase now.");
   }
 }
 
 void decreaseSpeed(){
-      stepsPerRevolution -= 20;
-      currentSpeed -= 9;
-      if(stepsPerRevolution <= 0){
-        stepsPerRevolution = 0;
-        decreaseState = false;
-      }
+  // decrease rev by 20
+  stepsPerRevolution -= 20;
+  // decrease speed by 9
+  currentSpeed -= 9;
+  // if we reach zero, 
+  if(stepsPerRevolution <= 0){
+    stepsPerRevolution = 0;
+    decreaseState = false;
+  }
 }
 
 void increaseSpeed(){
