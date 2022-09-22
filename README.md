@@ -9,6 +9,7 @@ Simply put, Name The Game, Spin The Wheel (NS) is a user-centric game giving use
 game to play. From 21 to HighLow, this simple game allows for all sorts of fun! 
 
 
+**Game Demo**: https://youtu.be/kENxFl8wl6g
 
 **Meet the Team**
 
