@@ -28,7 +28,7 @@ game lights, and a sound system.
 **How it Works/Under the Wheel**
 
 After selecting your game, the green button will spin the wheel. When you feel the moment is right, pressing the
-red button will begin its halt.
+red button will begin its halt, all while your wonderous music is played. With the results, determine your winners!
 
 
 However, instead of allowing for the wheel to come to a stop on its own, as is the case with most wheels, this wheel's
