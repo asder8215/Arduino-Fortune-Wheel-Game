@@ -2,17 +2,23 @@
 
 This repository houses all the code used to develop the fortunte-wheel-inspired game: Name The Game, Spin The Wheel.
 
+
 **Description**
 
 Simply put, Name The Game, Spin The Wheel (NS) is a user-centric game giving users the opportunity to choose which
 game to play. From 21 to HighLow, this simple game allows for all sorts of fun! 
 
+
+
 **Meet the Team**
+
 Jeffrey Becko
 Anthony Flores-Alvarez
 Mahdi Ali-Raihan 
 Ekene Ezeunala 
 Mario Carrillo-Bello 
+
+
 
 *Physical Components*
 
