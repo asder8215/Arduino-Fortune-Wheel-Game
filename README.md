@@ -31,11 +31,7 @@ After selecting your game, the green button will spin the wheel. When you feel t
 red button will begin its halt, all while your wonderous music is played. With the results, determine your winners!
 
 
-However, instead of allowing for the wheel to come to a stop on its own, as is the case with most wheels, this wheel's
-stop is entirely programatically-driven. That is, we programmed the motor that creates the spin to stop in a certain 
-amount of time by tampering with its velocity and rpm. This motor and the buttons are all connected to a breadboard
-that also houses the Arduino UNO where our code is stored, a microSD reader, a speaker, and a portable battery 
-that powers the whole game. 
+On the note of the wheel, instead of allowing for the wheel to come to a stop on its own, as is the case with most wheels, this wheel's stop is entirely programatically-driven. That is, we programmed the motor that creates the spin to stop in a certain amount of time by tampering with its velocity and rpm. This motor and the buttons are all connected to a breadboard that also houses the Arduino UNO where our code is stored, a microSD reader, a speaker, and a portable battery that powers the whole game. 
 
 
 The sound system is another component consisting of a speaker that is connected to the microSD card reader through
