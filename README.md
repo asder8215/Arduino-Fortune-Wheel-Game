@@ -12,15 +12,7 @@ game to play. From 21 to HighLow, this simple game allows for all sorts of fun!
 
 **Meet the Team**
 
-Jeffrey Becko
-
-Anthony Flores-Alvarez
-
-Mahdi Ali-Raihan 
-
-Ekene Ezeunala 
-
-Mario Carrillo-Bello 
+Jeffrey Becko | Anthony Flores-Alvarez | Mahdi Ali-Raihan | Ekene Ezeunala | Mario Carrillo-Bello 
 
 
 
